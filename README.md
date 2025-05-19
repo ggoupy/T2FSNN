@@ -4,6 +4,7 @@ PyTorch-based framework for **ultra-fast training** of Time-to-First-Spike (TTFS
 
 This framework uses an analytical expression for spike times, enabling GPU-based training of the SNN in a manner analogous to an ANN, **without requiring simulation over multiple time steps**. It is limited to a single SNN model with state-of-the-art performance, described in [1]. The SNN model features TTFS coding, single-spike Rel-PSP neurons, non-overlapping spike time windows, and event-driven BP algorithm.
 
+**Note:** PyTorch is only used for low-level operations. All computations, including the forward pass and gradient calculations, are implemented manually for educational purposes.
 
 ## Getting started
 
