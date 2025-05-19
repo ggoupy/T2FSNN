@@ -1,0 +1,10 @@
+{
+    "use_adam": true,
+    "grad_clip": 1,
+    "w_decay": 0.1,
+    "lr": 3e-5,
+    "annealing": 0.999,
+    "early_stopping": 25,
+    "epochs": 1000,
+    "batch_size": 32
+}
