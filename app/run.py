@@ -83,11 +83,11 @@ def load_dataset(dataset, batch_size, load_n_workers=8):
                 (0.4914,    0.4822,    0.4465),
                 (0.2023,    0.1994,    0.2010))
         ])
-        train_dataset = torchvision.datasets.CIFAR100(root='../datasets/cifar100/', 
+        train_dataset = torchvision.datasets.CIFAR100(root='./datasets/cifar100/', 
                                                       train=True, download=True, transform=transform_train)
-        val_dataset = torchvision.datasets.CIFAR100(root='../datasets/cifar100/', 
+        val_dataset = torchvision.datasets.CIFAR100(root='./datasets/cifar100/', 
                                                     train=True, download=True, transform=transform)
-        test_dataset = torchvision.datasets.CIFAR100(root='../datasets/cifar100/', 
+        test_dataset = torchvision.datasets.CIFAR100(root='./datasets/cifar100/', 
                                                      train=False, download=True, transform=transform)
         n_classes = 100
             
@@ -109,11 +109,11 @@ def load_dataset(dataset, batch_size, load_n_workers=8):
                 (0.4914,    0.4822,    0.4465),
                 (0.2023,    0.1994,    0.2010))
         ]) 
-        train_dataset = torchvision.datasets.CIFAR10(root='../datasets/cifar10/', 
+        train_dataset = torchvision.datasets.CIFAR10(root='./datasets/cifar10/', 
                                                      train=True, download=True, transform=transform_train)
-        val_dataset = torchvision.datasets.CIFAR10(root='../datasets/cifar10/', 
+        val_dataset = torchvision.datasets.CIFAR10(root='./datasets/cifar10/', 
                                                    train=True, download=True, transform=transform)
-        test_dataset = torchvision.datasets.CIFAR10(root='../datasets/cifar10/', 
+        test_dataset = torchvision.datasets.CIFAR10(root='./datasets/cifar10/', 
                                                     train=False, download=True, transform=transform)
         n_classes = 10
 
@@ -123,11 +123,11 @@ def load_dataset(dataset, batch_size, load_n_workers=8):
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize((0.2860,), (0.3530,))
         ])
-        train_dataset = torchvision.datasets.FashionMNIST(root='../datasets/fmnist/', 
+        train_dataset = torchvision.datasets.FashionMNIST(root='./datasets/fmnist/', 
                                                           train=True, download=True, transform=transform)
-        val_dataset = torchvision.datasets.FashionMNIST(root='../datasets/fmnist/', 
+        val_dataset = torchvision.datasets.FashionMNIST(root='./datasets/fmnist/', 
                                                         train=True, download=True, transform=transform)
-        test_dataset = torchvision.datasets.FashionMNIST(root='../datasets/fmnist/', 
+        test_dataset = torchvision.datasets.FashionMNIST(root='./datasets/fmnist/', 
                                                          train=False, download=True, transform=transform)
         n_classes = 10
 
@@ -137,11 +137,11 @@ def load_dataset(dataset, batch_size, load_n_workers=8):
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize((0.1307,), (0.3081,))
         ])
-        train_dataset = torchvision.datasets.MNIST(root='../datasets/mnist/', 
+        train_dataset = torchvision.datasets.MNIST(root='./datasets/mnist/', 
                                                    train=True, download=True, transform=transform)
-        val_dataset = torchvision.datasets.MNIST(root='../datasets/mnist/', 
+        val_dataset = torchvision.datasets.MNIST(root='./datasets/mnist/', 
                                                  train=True, download=True, transform=transform)
-        test_dataset = torchvision.datasets.MNIST(root='../datasets/mnist/', 
+        test_dataset = torchvision.datasets.MNIST(root='./datasets/mnist/', 
                                                   train=False, download=True, transform=transform)
         n_classes = 10
     
